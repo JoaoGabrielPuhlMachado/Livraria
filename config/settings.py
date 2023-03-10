@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
+    'uploader',
     'livraria',
     'rest_framework_simplejwt',
 ]
@@ -126,3 +127,12 @@ REST_FRAMEWORK = {
         "rest_framework_simplejwt.authentication.JWTAuthentication",
     ),
 }
+AUTH_USER_MODEL = 'livraria.Usuario'
+
+MEDIA_URL = "http://localhost:8000/media"
+
+MEDIA_ENDPOINT = "/media/"
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
+
+FILE_UPLOAD_PERMISSIONS = 0o640
