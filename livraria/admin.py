@@ -30,3 +30,32 @@ class UsuarioAdmin(UserAdmin):
     )
 
 admin.site.register(Usuario, UsuarioAdmin)
+
+# @admin.register(Autor)
+# class AutorAdmin(admin.ModelAdmin):
+#     list_display = ('nome', 'email')
+#     search_fields = ('nome', 'email')
+#     list_filter = ('nome',)
+#     ordering = ('nome,' 'email')
+
+# @admin.register(Categoria)
+# class CategoriaAdmin(admin.ModelAdmin):
+#     list_display = ('descricao',)
+#     search_filter = ('descricao',)
+#     list_filter = ('descricao',)
+#     ordering = ('descricao',)
+
+# @admin.register(Editora)
+# class EditoraAdmin(admin.ModelAdmin):
+#     list_display = ('nome',)
+#     search_fields = ('nome',)
+#     list_filter = ('nome',)
+#     orderin = ('nome',)
+
+# @admin.register(Livro)
+# class LivroAdmin(admin.ModelAdmin):
+#     list_display = ('titulo', 'editora', 'categoria')
+#     search_fields = ('titulo', 'editora_nome', 'categoria_descricao')
+#     list_filter = ('editora', 'categoria')
+#     ordering = ('titulo', 'editora', 'categoria')
+#     list_per_page = 25
